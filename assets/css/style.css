@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #fce138;
+  --secondary-color: #024e76;
+  --tertiary-color: #39a6b2;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +19,7 @@
   /* apply styles to <header> */
   header {
     padding: 20px 35px;
-    background-color: #39a6b2;
+    background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -173,7 +179,7 @@
   }
 
   .hero-form button:hover {
-    background-color: #39a6b2;
+    background-color: var(--tertiary-color);
   }
   
   .intro p {
@@ -555,7 +561,7 @@
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
+    border-bottom: 1px solid var(--tertiary-color);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -589,7 +595,7 @@
   }
   
   .step-text p {
-    color: #39a6b2;
+    color: var(--tertiary-color);
     font-size: 18px;
   }
   
@@ -614,7 +620,7 @@
     margin: 20px;
     flex: 1;
     background: #024e76;
-    color: #fce138;
+    color: var(--primary-color);
   }
   
   .trainer img {
@@ -643,7 +649,7 @@
   
   /* REACH OUT STYLES START */
   .contact {
-    background: #024e76;
+    background: var(--secondary-color);
   }
   
   .contact h2 {
@@ -682,11 +688,11 @@
   }
   
   .contact-form input, .contact-form textarea {
-    border: 1px solid #024e76;
+    border: 1px solid var(--secondary-color);
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: #024e76;
+    color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
@@ -702,7 +708,7 @@
     width: 100%;
     border: none;
     background: #fce138;
-    color: #024e76;
+    color: var(--secondary-color);
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
@@ -733,6 +739,8 @@
   .flex-row {
     display: flex;
   }
+
+
 
   /* MEDIA QUERY FOR SMALLED DESKTOP SCREENS AND SMALLER */
   @media screen and (max-width: 980px) {
